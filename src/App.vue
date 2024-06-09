@@ -1,9 +1,12 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+      <nav>
+        <router-link to="/"><el-button type="primary">home</el-button></router-link> |
+        <router-link to="/about"><el-button type="primary">about</el-button></router-link>|
+        <router-link to="/conception"><el-button type="primary">conception</el-button></router-link>|
+        <router-link to="/experiment"><el-button type="primary">experiment</el-button></router-link>|
+        <router-link to="/Discussion"><el-button type="primary">Discussion</el-button></router-link>
+      </nav>
+      <router-view/>
 </template>
 
 <style>
@@ -15,8 +18,9 @@
   color: #2c3e50;
 }
 
+
 nav {
-  padding: 30px;
+  padding: 10px 0 10px 0;
 }
 
 nav a {
@@ -25,6 +29,6 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #337ecc;
 }
 </style>
